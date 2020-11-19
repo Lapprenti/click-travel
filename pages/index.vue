@@ -7,7 +7,12 @@
       <div>
         <h1 class="title">Choose your dream destination...</h1>
         <div class="links">
-          <a v-for="d in dd" :key="d.name" class="giant-button" href="#">
+          <a
+            v-for="d in dd"
+            :key="d.name"
+            class="giant-button"
+            :href="'/liste?code=' + d.code"
+          >
             {{ d.name }}
           </a>
         </div>

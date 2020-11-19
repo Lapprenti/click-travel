@@ -4,4 +4,7 @@ export default {
   assignDreamDestinations(state, payload) {
     state.dreamDestinations = payload.data
   },
+  assignTicketsForSelectedDestination(state, payload) {
+    state.ticketsForSelectedDestination = payload.data
+  },
 }
