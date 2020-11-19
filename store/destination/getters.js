@@ -7,4 +7,7 @@ export default {
   getTicketsForSelectedDestination(state) {
     return state.ticketsForSelectedDestination
   },
+  getSelectedTicket(state) {
+    return state.selectedTicket
+  },
 }

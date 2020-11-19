@@ -7,4 +7,7 @@ export default {
   assignTicketsForSelectedDestination(state, payload) {
     state.ticketsForSelectedDestination = payload.data
   },
+  setCurrentTicket(state, payload) {
+    state.selectedTicket = payload
+  },
 }

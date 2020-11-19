@@ -19,9 +19,11 @@ export default {
     }
 
     const uriEncP = encodeURI(JSON.stringify(p))
-    console.log(uriEncP)
     apiService.get('tickets?filter=' + uriEncP).then((response) => {
       state.commit('assignTicketsForSelectedDestination', response)
     })
+  },
+  selectedTicket(state, payload) {
+    state.commit('setCurrentTicket', payload)
   },
 }
